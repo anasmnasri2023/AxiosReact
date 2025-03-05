@@ -29,10 +29,10 @@ export default function NavigationBar() {
           </Nav.Link>
           <Nav.Link
             as={NavLink}
-            to="home"
+            to="addEvent"
             style={({ isActive }) => (isActive ? activeStyle : defaultStyle)}
           >
-            Home
+            Add New Event
           </Nav.Link>
         </Nav>
       </Container>

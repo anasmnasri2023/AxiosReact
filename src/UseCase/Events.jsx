@@ -41,7 +41,7 @@ export default function Events() {
       {welcomeAlert && <Alert variant="info">Welcome to our App EVENT</Alert>}
       {showAlert && <Alert variant="info">You have booked an event!</Alert>}
       <Row>
-        {events.length == 0 && events.map((eventItem, index) => (
+        {events.length > 0 && events.map((eventItem, index) => (
           <Event key={index} event={eventItem} fnt={showAlertBook} />
         ))}
       </Row>

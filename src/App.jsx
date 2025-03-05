@@ -5,6 +5,9 @@ import Events from './UseCase/Events';
 import AddEvents from './UseCase/AddEvents';
 import { Routes , Route ,Link} from 'react-router-dom';
 import NavigationBar from './UseCase/NavigationBar';
+import EventDetails from './UseCase/EventDetails';
+import UpdateEvents from "./UseCase/UpdateEvent";
+
 
 function App() {
   
@@ -29,6 +32,9 @@ function App() {
       <Routes>
       <Route path="/events" element={<Events />} />
         <Route path="/addEvent" element={<AddEvents />} />
+        <Route path="/Details" element={<EventDetails/>} />
+        <Route path="/updateEvent/:id" element={<UpdateEvents />} />
+
         <Route
           path="*"
           element={<img src="/images/notfound.jfif" width="100%" alt="Not Found" />}
